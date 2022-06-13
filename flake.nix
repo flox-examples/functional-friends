@@ -1,7 +1,7 @@
 {
   description = "Template for Channels";
   
-  inputs.projects.url = "path:./projects";
+  inputs.projects.url = "./projects";
   inputs.projects.inputs.capacitor.follows = "capacitor";
   
   outputs = { capacitor, ... } @ args: capacitor args ( {lib, auto,...}: 
