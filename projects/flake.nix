@@ -1,6 +1,6 @@
 rec {
+  inputs = {};
 
-
-  outputs = {self, capacitor, ...} @ inputs: inputs ;
+  outputs = {capacitor, ...}: inputs ;
 
 }
