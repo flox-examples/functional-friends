@@ -7,6 +7,6 @@
   outputs = { capacitor, ... } @ args: capacitor args ( {lib, auto,...}: 
     let projects = auto.callSubflake "projects" {};
     in
-    auto.callPackageWith ./flox.nix { inputs = { inherit projects; }; } {}
+    auto.callPackageWith { inputs = { inherit projects; }; } ./flox.nix {}
   );
 }
